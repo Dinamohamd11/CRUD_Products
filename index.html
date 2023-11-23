@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="product py-4">
+        <div class="container">
+            <h1>Product</h1>
+            <label for="productName">Product Name</label>
+            <input type="text" class="form-control" name="" id="productName">
+            <label for="productPrice">Product Price</label>
+            <input type="text" class="form-control" id="productPrice">
+            <label for="productCateg">Product Categ</label>
+            <input type="text" class="form-control" id="productCateg">
+            <label for="productDesc">Product Desc</label>
+            <input type="text" class="form-control" id="productDesc">
+            <label for="productCount">Product Count</label>
+            <input type="number" class="form-control w-25" id="productCount">
+            <button class="btn btn-info mt-4 d-inline-block" onclick="addProduct()" id="add"> Add </button>
+            <button class="btn btn-info mt-4 d-none" onclick="updateProduct()" id="upd"> Update </button>
+            <button class="btn btn-info mt-4" onclick="deleteAll()"> Delete All </button>
+            <table class="table mt-5 text-center table-bordered">
+                <thead>
+                    <th>ID</th>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                    <th>Product Categ</th>
+                    <th>Product Description</th>
+                    <th>count</th>
+                    <th>Total</th>
+                    <th>Delete</th>
+                    <th>Update</th>
+                </thead>
+                <tbody id="tBody">
+                </tbody>
+            </table>
+            <h2 id="total">Total:</h2>
+        </div>
+    </section>
+    <!-- js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
